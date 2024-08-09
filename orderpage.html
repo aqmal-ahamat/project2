@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="images/icon512_rounded.png">
+   
+
+    <!--linking google fonts to use -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <title>Order</title>
+</head>
+
+<body>
+    <header> 
+        <section id="header">
+            <article>
+                <img id="logo1" class="logos" src="images/logo 1.png" alt="first logo" >
+                <img id="logo2" class="logos" src="images/logo 2.png" alt="second logo" >
+                <img id="logo3" class="logos" src="images/logo 1.png" alt="third logo" >
+                
+            </article>
+            <nav id="nav-desktop">
+                <a class="nav-items" href="index.html">Home</a>
+                <a class="nav-items" href="shoppage.html">Shop</a>
+                <a class="nav-items"href='aboutpage.html'>About Us</a>
+                <a class="nav-items" id='register'href='register.html'>Register</a>
+                                <a class="nav-items" href='cart.html'>Cart</a>
+
+                
+                
+            </nav>
+            
+        </section>    
+     
+    <section  class="order-top-section">
+        <img src="images/order-top.jpg" alt="">
+        <article class="text">
+            <article>
+                    <h1 id="order-top-heading">ORDER</h1>
+            </article>
+            
+        </article>
+        
+    </section> 
+    </header>
+
+    <main id="order-main">
+        <section id="cart">
+            <table id="cart-table">
+                <colgroup>
+                    <col>
+                    <col id="cart-quantity">
+                    <col id="price-per-item">
+                    <col id="total">
+                </colgroup>
+                <thead id="cart-table-head">
+                    <tr>
+                        <th>name</th>
+                        <th>Quantity / weight(kg)</th>
+                        <th>Price per kg / item</th>
+                        <th>total</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-table-body">
+        
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" id="finalprice">Price</td>
+                        <td id="finalTotal"></td>
+                    </tr>
+        
+                </tfoot>
+            </table>
+        
+        </section>
+        
+        <section id="order-form">
+        
+        <form id="order-form">
+            <section>
+                
+
+            <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+            <label for="first_name">First Name</label>
+            <input class="text-field"type="text" id="first_name" required>
+            </div>
+            
+            <div>
+            <label for="Last_name">Last Name</label>
+            <input class="text-field" type="text" id="Last_name" required>
+            </div>
+            
+
+            <div>
+                <label for="mob-no">Mobile Number</label>
+                <input class="text-field" type="tel" id="mob-no" maxlength="10" required>
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input class="text-field" type="email" id="email" required>
+            </div>
+            </fieldset>
+
+            
+
+            <fieldset>
+                <legend>Delivery and Payment</legend>
+                <div>
+                <label for="st-add">Street Address</label>
+                <input class="text-field"type="text" id="st-add" required>
+                </div>
+                
+                <div>
+                <label for="city">City</label>
+                <input class="text-field" type="text" id="city" required>
+                </div>
+    
+                <div>
+                    <label for="province">Province</label>
+                    <input class="text-field" type="text" id="province" required>
+                </div>
+    
+                <div>
+                    <label for="">Payment Method</label>
+                    <div id="payment-option-section">
+                    <input type="radio" name="payment-method" id="card" class="payment-check">
+                    <label for="card" class="payment-method-text"> Credit/Debit card</label>
+
+                    <input type="radio" name="payment-method" id="pay-later" class="payment-check">
+                    <label for="pay-later" class="payment-method-text">Koko/Mint pay</label>
+
+                    <input type="radio" name="payment-method" id="cod" class="payment-check">
+                    <label for="cod" class="payment-method-text">Cash on Delivery</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div id="submit">
+            <!--<button type="button"  >Pay now</button>-->
+            <input type="submit" name="Order" id="order-button-op">
+            </div>
+
+            </section>
+
+            
+        </form>
+
+        </section>
+
+        <section id="message">
+           
+
+        </section>
+
+        
+        
+    </main>
+
+
+        <footer>
+            <section id="footer">
+                <img src="images/icon512_rounded.png" alt="">
+                <p>"At GrocieS Supermarket, we are committed to providing our customers with the freshest produce, highest quality products, and exceptional service. With a wide range of grocery items, including fresh fruits, vegetables, dairy products, cosmetics, and more, we strive to meet the diverse needs of our valued customers. Whether you're shopping for your everyday essentials or seeking specialty items, GrocieS Supermarket is your one-stop destination for all your grocery needs. Visit us today and experience the GrocieS difference!</p>
+                <nav>
+                    <a href="shoppage.html">Shop</a>
+                    <a href="aboutpage.html">About Us</a>
+                </nav>
+                <p>Store Opening Hours : 8.00 A.M - 11.00 P.M</p>
+            </section>
+            <!-- Images on this site are from pixels.com and pixabay.com-->
+        </footer>
+        <script src="order.js"></script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
